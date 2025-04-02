@@ -12,5 +12,11 @@ public class Archivo {
     private String RUTA_ARCHIVO_MASCOTAS = "mascotas.csv";
     private String RUTA_ARCHIVO_DUEÑO = "dueños.csv";
     
+    //Agregar Construtor
+
+    public Archivo() {
+        
+    }
+    
     
 }
