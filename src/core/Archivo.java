@@ -4,6 +4,10 @@
  */
 package core;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 /**
  *
  * @author dubalaguilar
@@ -15,7 +19,18 @@ public class Archivo {
     //Agregar Construtor
 
     public Archivo() {
-        
+        cargarDatosDelasMacotas();
+    }
+    
+    public void cargarDatosDelasMacotas(){
+        try(BufferedReader bufferedReader = new BufferedReader(new FileReader(RUTA_ARCHIVO_MASCOTAS))){
+            String linea;
+            while((linea = bufferedReader.readLine())!= null){
+                
+            }
+        }catch(IOException e){
+            
+        }
     }
     
     
